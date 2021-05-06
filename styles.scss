@@ -1,0 +1,137 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header header header header"
+        "nav main main main main"
+        "footer footer footer footer footer";
+    height: 100vh;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+
+    header {
+        grid-area: header;
+
+        .toolbar {
+            background-color: rgb(251, 251, 251);
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+
+            input {
+                height: 30px;
+                align-self: center;
+                padding-left: 5px;
+                outline: none;
+            }
+        }
+        .barra {
+            background: rgb(37,0,84);
+            background: linear-gradient(90deg, 
+                        rgba(37,0,84,1) 0%,
+                        rgba(69,9,121,1) 35%,
+                        rgba(118,0,201,1) 100%);
+            padding: 1em;
+            color:white;
+            font-size: 25px;
+            letter-spacing: 2px;
+           
+        }
+    }
+    
+    nav {
+        grid-area: nav;
+    }
+    
+    .menu {
+        background-color: rgb(193, 126, 255);
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // padding: 1em 0.5em;
+
+        .titulo {
+            font-size: 20px;
+            // display: flex;
+            // align-items: center;
+            // margin: 0.5em;
+            
+        }
+
+        .menu-item {
+            align-self: flex-start;
+            padding: 15px 0;
+            // margin: 0.5em;
+            border: 1px solid rgb(132, 0, 255);
+            background-color: rgb(224, 119, 250);
+            width: 100%;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    main {
+        grid-area: main;
+        background-color: lightyellow;
+        // flex-grow: 1;
+        // max-height: 80vh;
+        // overflow-y: scroll;
+    }
+    
+    footer {
+        grid-area: footer;
+        height: 3em;
+        // position: sticky;
+        // flex-shrink: 0;
+        background-color: lightgreen;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
